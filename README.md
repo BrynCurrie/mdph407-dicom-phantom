@@ -1,6 +1,6 @@
 # MDPH407 DICOM phantom
 
-Teaching generator for the University of Canterbury **MDPH407** treatment-planning lab (Elekta Monaco 6.2.3.0, educational licence).
+Teaching generator for the University of Canterbury **MDPH407** treatment-planning lab utilising Elekta Monaco 6.2.3.0, educational licence.
 
 It writes a synthetic **CT Image** series and an **RT Structure Set** that share one Frame of Reference. You choose a body shape, a target, and OARs in a JSON config. The lab notes tell you how to import the folder into Monaco.
 
