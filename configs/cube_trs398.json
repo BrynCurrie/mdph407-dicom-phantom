@@ -1,0 +1,25 @@
+{
+  "preset": "cube_trs398",
+  "patient_name": "MDPH407^CUBE",
+  "patient_id": "MDPH407CUBE",
+  "studyset_hint": "CUBE40",
+  "description": "40 cm water cube for a TRS-398-style 10x10 cm reference field.",
+  "grid": {
+    "pixel_size_mm": 2.0,
+    "slice_thickness_mm": 5.0,
+    "nx": 200,
+    "ny": 200,
+    "nz": 80
+  },
+  "body": {
+    "name": "External",
+    "shape": "cube",
+    "size_mm": [400.0, 400.0, 400.0],
+    "center_mm": [0.0, 0.0, 0.0],
+    "hu": 0,
+    "rt_type": "EXTERNAL",
+    "color": [0, 255, 0]
+  },
+  "background_hu": -1000,
+  "structures": []
+}

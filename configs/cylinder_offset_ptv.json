@@ -1,0 +1,57 @@
+{
+  "preset": "cylinder_offset_ptv",
+  "patient_name": "MDPH407^CYL",
+  "patient_id": "MDPH407CYL",
+  "studyset_hint": "CYL40PTV",
+  "description": "40 cm water cylinder, offset spherical PTV, plus two OARs for a cover-and-spare exercise.",
+  "grid": {
+    "pixel_size_mm": 2.0,
+    "slice_thickness_mm": 5.0,
+    "nx": 200,
+    "ny": 200,
+    "nz": 80
+  },
+  "body": {
+    "name": "External",
+    "shape": "cylinder",
+    "radius_mm": 200.0,
+    "height_mm": 400.0,
+    "axis": "z",
+    "center_mm": [0.0, 0.0, 0.0],
+    "hu": 0,
+    "rt_type": "EXTERNAL",
+    "color": [0, 255, 0]
+  },
+  "background_hu": -1000,
+  "structures": [
+    {
+      "name": "PTV",
+      "shape": "sphere",
+      "radius_mm": 100.0,
+      "center_mm": [50.0, 0.0, 0.0],
+      "hu": 0,
+      "rt_type": "PTV",
+      "color": [255, 0, 0]
+    },
+    {
+      "name": "OAR_Cord",
+      "shape": "cylinder",
+      "radius_mm": 10.0,
+      "height_mm": 200.0,
+      "axis": "z",
+      "center_mm": [-80.0, 0.0, 0.0],
+      "hu": 0,
+      "rt_type": "ORGAN",
+      "color": [0, 0, 255]
+    },
+    {
+      "name": "OAR_Lung",
+      "shape": "sphere",
+      "radius_mm": 40.0,
+      "center_mm": [-50.0, 80.0, 0.0],
+      "hu": -700,
+      "rt_type": "ORGAN",
+      "color": [255, 165, 0]
+    }
+  ]
+}
